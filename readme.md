@@ -4,7 +4,7 @@ A simple PHP class for filtering RSS feeds. *Modified for filtering only passing
 
 ## Usage
 
-1] Create your `words.php` file with the words that you ~~don't~~ want to see in *titles* of the RSS feeds. *`words.php` modified and personalized for filtering MVG Störungsticker (https://ticker.mvg.de/).*
+1] Create your `words.php` file with the words that you ~~don't~~ want to see in *titles* of the RSS feeds. *Modified and personalized for filtering MVG Störungsticker (https://ticker.mvg.de/).*
 
 ```php
 <?php
