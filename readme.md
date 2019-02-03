@@ -4,7 +4,7 @@ A simple PHP class for filtering RSS feeds.
 
 ## Usage
 
-1] Create your `words.php` file with the words that you don't want to see in the RSS feeds.
+1] Create your `words.php` file with the words that you ~~don't~~ want to see in * *titles* * of the RSS feeds.
 
 ```php
 <?php

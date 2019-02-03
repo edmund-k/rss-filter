@@ -65,7 +65,9 @@ class RssFilter {
         $updated = $this->getAttribute($item->getElementsByTagName('updated'));
         $published = $pubDate ? $pubDate : $updated;
 
-        if (!$this->stristrArray($title, $words) && !($this->stristrArray($description, $words))) {
+// instead of filtering out articles with matching words in title or content, only pass through articles with matching words in title
+//        if (!$this->stristrArray($title, $words) && !($this->stristrArray($description, $words))) {
+        if ($this->stristrArray($title, $words)) {
           $combineItems .= '<item>
             <title>' . $title . '</title>
             <link>' . $link . '</link>
@@ -92,7 +94,9 @@ class RssFilter {
         $description = $description1 ? $description1 : $description2;
         $pubDate = $this->getAttribute($item->getElementsByTagName('pubDate'));
 
-        if (!$this->stristrArray($title, $words) && !($this->stristrArray($description, $words))) {
+// instead of filtering out articles with matching words in title or content, only pass through articles with matching words in title
+//        if (!$this->stristrArray($title, $words) && !($this->stristrArray($description, $words))) {
+        if ($this->stristrArray($title, $words)) {
           $combineItems .= '<item>
             <title>' . $title . '</title>
             <link>' . $link . '</link>
